@@ -1,0 +1,25 @@
+var num= 123456;
+console.log(num.toFixed());
+console.log("AGHFS");
+console.log(135);
+console.log("135");
+console.log(num.toFixed()+3);
+console.log(num+3);
+
+var f=function(num){
+    var arr1=[];
+    var arr2=[];
+    var aviso=0;
+    arr1= num.toFixed().split("");
+    arr1.forEach(element=>{arr2.unshift(element)});
+    for(i=0;i<arr1.length;i++){
+        if(arr1[i]!==arr2[i]){
+            aviso=1;
+        }
+
+    }
+    if(aviso===1){return false} else {return true}
+}
+console.log(f(12664476621));
+
+

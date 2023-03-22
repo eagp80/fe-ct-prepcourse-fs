@@ -70,7 +70,7 @@ describe('EJERCICIOS EXTRA', function () {
          expect(capicua(7878700)).toEqual('No es capicua');
       });
    });
-   describe('deleteAbc(string)', function () {
+   describe.only('deleteAbc(string)', function () {
       it('Debe retornar el mismo string, pero eliminando las letras "a", "b" y "c"', function () {
          expect(deleteAbc('abcefgh')).toEqual('efgh');
          expect(deleteAbc('abc')).toEqual('');
